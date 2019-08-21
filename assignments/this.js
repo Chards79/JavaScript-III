@@ -13,40 +13,40 @@
 
 // code example for Window Binding
 
-// "use strict";
+"use strict";
 
-// function weAre() {
-// 	console.log(this.wyldStallyns);
-// }
+function weAre() {
+	console.log(this.wyldStallyns);
+}
 
-// weAre();
-// const wyldStallyns = "Excellent!";
+weAre();
+const wyldStallyns = "Excellent!";
 
 // Principle 2
 
 // code example for Implicit Binding
 
-// const favAlbum = {
-// 	band: "Pixies",
-// 	album: "Trompe le Monde",
-// 	alternative: function() {
-// 		console.log(this.album);
-// 	}
-// };
+const favAlbum = {
+	band: "Pixies",
+	album: "Trompe le Monde",
+	alternative: function() {
+		console.log(this.album);
+	}
+};
 
-// favAlbum.alternative();
+favAlbum.alternative();
 
 // Principle 3
 
 // code example for New Binding
 
-// function Gob(song) {
-// 	this.thing = song;
-// }
+function Gob(song) {
+	this.thing = song;
+}
 
-// let magicGob = new Gob("The Final Countdown");
+let magicGob = new Gob("The Final Countdown");
 
-// console.log(magicGob.thing);
+console.log(magicGob.thing);
 
 // Principle 4
 
